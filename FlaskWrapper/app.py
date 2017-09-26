@@ -18,12 +18,12 @@ def test(i):
 @app.route("/flask1/")
 @app.route("/flask1/<path:path>")
 def flask1(path=""):
-	return request.urlopen("https://127.0.0.1:5001/" + path).read()
+	return request.urlopen("http://localhost:5001/" + path).read()
 
 @app.route("/flask2/")
 @app.route("/flask2/<path:path>")
 def flask2(path=""):
-	return request.urlopen("https://127.0.0.1:5002/" + path).read()
+	return request.urlopen("http://localhost:5002/" + path).read()
 
 # @app.route("/flask2")
 # def test():
