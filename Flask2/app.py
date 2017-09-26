@@ -6,7 +6,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/flask2")
 def home():
     return "Welcome to Flask 2"
 
