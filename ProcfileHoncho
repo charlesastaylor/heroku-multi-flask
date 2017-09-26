@@ -1,0 +1,2 @@
+python: cd Flask1 && pip install -r requirements.txt && gunicorn -w 4 -b 0.0.0.0:2000 -k gevent app:app
+python: cd Flask2 && pip install -r requirements.txt && gunicorn -w 4 -b 0.0.0.0:3000 -k gevent app:app
