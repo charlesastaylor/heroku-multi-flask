@@ -1,6 +1,6 @@
 flaskWrapper: cd FlaskWrapper && gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent app:app
-flask1: cd Flask1 && gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent app:app
-flask2: cd Flask2 && gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent app:app
+flask1: cd Flask1 && gunicorn -w 4 -b 0.0.0.0:5001 -k gevent app:app
+flask2: cd Flask2 && gunicorn -w 4 -b 0.0.0.0:5002 -k gevent app:app
 
 #flaskWrapper: cd FlaskWrapper && python app.py
 #flask1: cd Flask1 && python app.py
