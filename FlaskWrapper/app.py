@@ -25,6 +25,8 @@ def flask1(path=""):
 def flask2(path=""):
 	return request.urlopen("http://localhost:5002/" + path).read()
 
+
+
 # @app.route("/flask2")
 # def test():
 #     return request.urlopen("http://localhost:5000").read()
