@@ -17,9 +17,6 @@ def flask1(path=""):
 def flask2(path=""):
 	return request.urlopen("http://localhost:5002/" + path).read()
 
-@app.route("/test/")
-def test():
-	return "success"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=5000)
